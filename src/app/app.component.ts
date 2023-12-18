@@ -11,5 +11,5 @@ import { HeaderComponent } from './header/header.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'iata-ssim-chap6-msg';
+  title = 'iata-ssim-slot-msg';
 }

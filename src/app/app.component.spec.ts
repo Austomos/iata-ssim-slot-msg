@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'iata-ssim-chap6-msg' title`, () => {
+  it(`should have the 'iata-ssim-slot-msg' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('iata-ssim-chap6-msg');
+    expect(app.title).toEqual('iata-ssim-slot-msg');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, iata-ssim-chap6-msg');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, iata-ssim-slot-msg');
   });
 });

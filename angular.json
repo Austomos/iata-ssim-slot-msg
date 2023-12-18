@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "iata-ssim-chap6-msg": {
+    "iata-ssim-slot-msg": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/iata-ssim-chap6-msg",
+            "outputPath": "dist/iata-ssim-slot-msg",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "iata-ssim-chap6-msg:build:production"
+              "buildTarget": "iata-ssim-slot-msg:build:production"
             },
             "development": {
-              "buildTarget": "iata-ssim-chap6-msg:build:development"
+              "buildTarget": "iata-ssim-slot-msg:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "iata-ssim-chap6-msg:build"
+            "buildTarget": "iata-ssim-slot-msg:build"
           }
         },
         "test": {

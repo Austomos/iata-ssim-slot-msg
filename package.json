@@ -1,5 +1,5 @@
 {
-  "name": "iata-ssim-chap6-msg",
+  "name": "iata-ssim-slot-msg",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:iata-ssim-chap6-msg": "node dist/iata-ssim-chap6-msg/server/server.mjs"
+    "serve:ssr:iata-ssim-slot-msg": "node dist/iata-ssim-slot-msg/server/server.mjs"
   },
   "private": true,
   "dependencies": {
