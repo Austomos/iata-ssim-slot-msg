@@ -1,0 +1,7 @@
+@use '~@angular/material';
+
+
+footer {
+    color: mat-color($theme-primary, 500);
+    display : flex;
+}
