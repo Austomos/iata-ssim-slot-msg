@@ -10,6 +10,12 @@ html, body {
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: mat.get-color-from-palette($theme-primary, 50);
-    color: mat.get-color-from-palette($theme-primary, 50-contrast);
+}
+
+app-root {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
 }
