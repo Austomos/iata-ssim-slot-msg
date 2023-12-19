@@ -1,39 +1,49 @@
 <div class="helper-wrapper">
-    <div class="header-wrapper">
-        <div>
-            {{ isConvertFormToSSIM === true ? "Message form" : "SSIM Message" }}
-        </div>
-        <div>
-            <button 
-                mat-icon-button color="primary" 
-                aria-label="Switch helper"
-                (click)="onClickChangeHelper()"
-            >
-                <span class="switch-helper-icon"><fa-icon [icon]="faRotate"></fa-icon></span>
-            </button>
-        </div>
-        <div>{{ isConvertFormToSSIM === false ? "Message form" : "SSIM Message" }}</div>
-    </div>
-    <div class="body-wrapper">
-        <ng-container *ngIf="isConvertFormToSSIM; then convertFormToSSIM; else convertSSIMToForm"></ng-container>
-    </div>
+	<div class="header-wrapper">
+		<div>
+			{{ isConvertFormToSSIM === true ? 'Message form' : 'SSIM Message' }}
+		</div>
+		<div>
+			<button
+				mat-icon-button
+				color="primary"
+				aria-label="Switch helper"
+				(click)="onClickChangeHelper()">
+				<span class="switch-helper-icon"
+					><fa-icon [icon]="faRotate"></fa-icon
+				></span>
+			</button>
+		</div>
+		<div>
+			{{
+				isConvertFormToSSIM === false ? 'Message form' : 'SSIM Message'
+			}}
+		</div>
+	</div>
+	<div class="body-wrapper">
+		<ng-container
+			*ngIf="
+				isConvertFormToSSIM;
+				then convertFormToSSIM;
+				else convertSSIMToForm
+			"></ng-container>
+	</div>
 </div>
 
 <ng-template #convertFormToSSIM>
-    <div>
-        <app-form-message></app-form-message>
-    </div>
-    <div>
-        <app-ssim-message></app-ssim-message>
-    </div>
+	<div>
+		<app-form-message></app-form-message>
+	</div>
+	<div>
+		<app-ssim-message></app-ssim-message>
+	</div>
 </ng-template>
 
 <ng-template #convertSSIMToForm>
-    <div>
-        <app-ssim-message></app-ssim-message>
-    </div>
-    <div>
-        <app-form-message></app-form-message>
-    </div>
+	<div>
+		<app-ssim-message></app-ssim-message>
+	</div>
+	<div>
+		<app-form-message></app-form-message>
+	</div>
 </ng-template>
-

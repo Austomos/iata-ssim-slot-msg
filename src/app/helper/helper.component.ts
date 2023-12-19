@@ -8,18 +8,24 @@ import { faRotate } from '@fortawesome/free-solid-svg-icons';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'app-helper',
-  standalone: true,
-  imports: [CommonModule, FormMessageComponent, SsimMessageComponent, FontAwesomeModule, MatButtonModule],
-  templateUrl: './helper.component.html',
-  styleUrl: './helper.component.scss'
+	selector: 'app-helper',
+	standalone: true,
+	imports: [
+		CommonModule,
+		FormMessageComponent,
+		SsimMessageComponent,
+		FontAwesomeModule,
+		MatButtonModule,
+	],
+	templateUrl: './helper.component.html',
+	styleUrl: './helper.component.scss',
 })
 export class HelperComponent {
-  faRotate = faRotate;
-  
-  isConvertFormToSSIM: boolean = true;
+	faRotate = faRotate;
 
-  onClickChangeHelper(): void {
-    this.isConvertFormToSSIM = !this.isConvertFormToSSIM;
-  }
+	isConvertFormToSSIM: boolean = true;
+
+	onClickChangeHelper(): void {
+		this.isConvertFormToSSIM = !this.isConvertFormToSSIM;
+	}
 }
