@@ -1,0 +1,28 @@
+div.helper-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+
+    > div.header-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+
+        > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:first-child, &:last-child {
+                flex: 1;
+            }
+        }
+    }
+    > div.body-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+
+        > div {
+            flex: 1;
+            min-width: 300px;
+        }
+    }
+}
