@@ -5,7 +5,6 @@ import { FormMessageComponent } from './form-message/form-message.component';
 import { SsimMessageComponent } from './ssim-message/ssim-message.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faRotate } from '@fortawesome/free-solid-svg-icons';
-import { MatButtonModule } from '@angular/material/button';
 
 @Component({
 	selector: 'app-helper',
@@ -15,7 +14,6 @@ import { MatButtonModule } from '@angular/material/button';
 		FormMessageComponent,
 		SsimMessageComponent,
 		FontAwesomeModule,
-		MatButtonModule,
 	],
 	templateUrl: './helper.component.html',
 	styleUrl: './helper.component.scss',
